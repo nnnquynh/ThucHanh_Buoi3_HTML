@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.schedule h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #333;
+}
+.schedule-row {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr); /* 1 cột Tiết, 5 cột Thứ */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.schedule-row > div {
+    padding: 14px;
+    text-align: center;
+    border-left: 1px solid #eee;
+}
+
+.schedule-row > div:first-child {
+    border-left: none;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+.schedule-row.header {
+    background-color: #0077cc;
+    color: white;
+    font-weight: bold;
+}
+</style>
+<body>
+    <section class="schedule">
+    <h2>Thời khoá biểu</h2>
+    <div class="schedule-table">
+    <div class="schedule-row header">
+    <div>Tiết</div>
+    <div>Thứ 2</div>
+    <div>Thứ 3</div>
+    <div>Thứ 4</div>
+    <div>Thứ 5</div>
+    <div>Thứ 6</div>
+    </div>
+    <div class="schedule-row">
+        <div>1</div>
+        <div>Toán</div>
+        <div>Văn</div>
+        <div>Hóa</div>
+        <div>Sinh</div>
+        <div>Tin</div>
+        </div>
+        <div class="schedule-row">
+        <div>2</div>
+        <div>Văn</div>
+        <div>Toán</div>
+        <div>Lý</div>
+        <div>Văn</div>
+        <div>Tiếng Anh</div>
+        </div>
+        <div class="schedule-row">
+        <div>3</div>
+        <div>Tiếng Anh</div>
+        <div>Hóa</div>
+        <div>TD</div>
+        <div>Sử</div>
+        <div>Địa</div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.subjects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.grid-subjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.subject-card {
+    background-color: pink;
+    border: 2px solid #0077cc;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.subject-card:hover {
+    background: pink;
+    transform: scale(1.03);
+}
+</style>
+<body>
+    <section class="subjects">
+    <h2> Danh sách môn học yêu thích</h2>
+    <div class="grid-subjects">
+    <div class="subject-card">Toán</div>
+    <div class="subject-card">Tin học</div>
+    <div class="subject-card">Văn</div>
+    <div class="subject-card">Tiếng Anh</div>
+    <div class="subject-card">Vật lý</div>
+    <div class="subject-card">Hóa học</div>
+    </div>
+    </section>
+</body>
+</html>
